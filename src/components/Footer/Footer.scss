@@ -4,18 +4,25 @@
 footer {
   height: 130px;
   color: $font-color;
+  font-family: PFDinTextCondPro-Regular;
 
   .footer__content{
     display: flex;
-    margin: 0 0 0 5em;
+    margin: 0 5em 0 5em;
 
     .footer__contacts {
       display: flex;
       flex-direction: column;
-      margin-top: 1em;
+
+      h4{
+        text-transform: uppercase;
+        font-size: small;
+      }
 
       .footer__number{
         color: $color-red;
+        font-family: PFDinTextCondPro-Bold;
+        font-weight: bold;
         font-size: 24px;
       }
 
@@ -28,14 +35,41 @@ footer {
   }
 
   .footer__nav{
-    margin: 0 13em 0 13em;
+    margin: 0 11em 0 11em;
     .footer-nav__menu{
       display: flex;
       list-style: none;
 
       li{
+        &:hover{
+          cursor: pointer;
+        }
         &:not(&:last-child){
           margin-right: 3em;
+        }
+      }
+    }
+  }
+
+  .footer__join-us{
+    margin-top: 1em;
+
+    .join-us__c-media-container{
+      display: flex;
+      list-style: none;
+      padding-inline-start: 0;
+
+      .c-media{
+        width: 8px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $back-color1;
+        padding: 7px 10px;
+        border-radius: 4px;
+        &:not(&:last-child){
+          margin-right: 7px;
         }
       }
     }

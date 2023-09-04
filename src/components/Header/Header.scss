@@ -22,6 +22,12 @@ header {
   text-transform: uppercase;
 }
 
+a{
+  text-decoration: none;
+  color: $font-color;
+  font-family: PFDinTextCondPro-Regular;
+}
+
 .header__logo {
   img {
     width: 177px;

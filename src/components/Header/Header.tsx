@@ -20,10 +20,10 @@ export const Header = () => {
                         </Link>
                     </li>
                     <li className={"Main-nav__link--active"}>
-                        призы
+                        <a href={"#"}>призы</a>
                     </li>
                     <li className={"Main-nav__link--active"}>
-                        победители
+                        <a href={"#"}>победители</a>
                     </li>
                 </ul>
             </nav>
