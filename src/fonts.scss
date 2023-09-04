@@ -1,0 +1,25 @@
+$font-color: #5A1404;
+@font-face {
+  font-family: 'PFDinTextCondPro-Bold';
+  src: url('/public/Fonts/PFDinTextCondPro-Bold.ttf') format('truetype'),
+  url('/public/Fonts/pfdintextcondpro-bold.woff') format('woff'),
+  url('/public/Fonts/pfdintextcondpro-bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinTextCondPro-Medium';
+  src: url('/public/Fonts/PFDinTextCondPro-Medium.ttf') format('truetype'),
+  url('/public/Fonts/pfdintextcondpro-medium.woff') format('woff'),
+  url('/public/Fonts/pfdintextcondpro-medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PFDinTextCondPro-Regular';
+  src: url('/public/Fonts/PFDinTextCondPro-Regular.ttf') format('truetype'),
+  url('/public/Fonts/pfdintextcondpro-regular.woff') format('woff'),
+  url('/public/Fonts/pfdintextcondpro-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

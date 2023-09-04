@@ -1,0 +1,44 @@
+@import "../../fonts";
+@import "../../index";
+
+footer {
+  height: 130px;
+  color: $font-color;
+
+  .footer__content{
+    display: flex;
+    margin: 0 0 0 5em;
+
+    .footer__contacts {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1em;
+
+      .footer__number{
+        color: $color-red;
+        font-size: 24px;
+      }
+
+      p{
+        font-size: 12px;
+      }
+
+    }
+
+  }
+
+  .footer__nav{
+    margin: 0 13em 0 13em;
+    .footer-nav__menu{
+      display: flex;
+      list-style: none;
+
+      li{
+        &:not(&:last-child){
+          margin-right: 3em;
+        }
+      }
+    }
+  }
+
+}
