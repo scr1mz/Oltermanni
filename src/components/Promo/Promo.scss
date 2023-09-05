@@ -4,9 +4,7 @@
 .body-content__promo-section{
   display: flex;
   flex-direction: column;
-  flex: 1;
   align-items: center;
-  margin-bottom: 5em;
 
   h1{
     color: $font-color;
@@ -14,6 +12,7 @@
   }
 
   .promo-section__slider-container{
-    width: 70%;
+    width: 80%;
+    height: 100%;
   }
 }
