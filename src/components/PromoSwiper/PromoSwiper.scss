@@ -1,0 +1,71 @@
+@import "../../fonts";
+@import "../../index";
+
+@at-root {
+  :root {
+    --swiper-navigation-size: 28px;
+  }
+}
+
+.product-slider {
+  flex: 1;
+  height: 100%;
+
+  .swiper{
+    height: 100%;
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10em;
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+
+      img {
+        height: 100%;
+        width: 10em;
+      }
+
+      h2 {
+        color: $font-color;
+        font-size: 16px;
+        font-family: PFDinTextCondPro-Regular;
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    color: $font-color;
+    transition: color 0.5s;
+    top: 45%;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+
+  .swiper-button-next {
+    color: $font-color;
+    transition: color 0.5s;
+    top: 45%;
+
+    &:hover {
+      color: $color-red;
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 2em;
+
+    .swiper-pagination-bullet {
+      background-color: $font-color;
+    }
+
+  }
+
+}

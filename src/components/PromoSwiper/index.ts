@@ -1,0 +1,1 @@
+export {ProductSwiper} from "./PromoSwiper"
