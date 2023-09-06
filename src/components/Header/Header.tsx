@@ -3,7 +3,8 @@ import "./Header.scss"
 import "../../fonts.scss"
 import {Link} from "react-scroll";
 
-import "../../../public/Fonts/PFDinTextCondPro-Regular.ttf"
+import Img_logo from "../../../public/images/logo.svg"
+
 
 export const Header = () => {
 
@@ -11,7 +12,7 @@ export const Header = () => {
         <header className={"is-fixed"}>
             <div className={"header__logo"}>
                 <a href={"/"} className={"logo__home-link--active"}>
-                    <img src="/images/logo.svg" alt="oltermanni"/>
+                    <img src={Img_logo} alt="oltermanni"/>
                 </a>
             </div>
             <nav className={"Main-nav"}>

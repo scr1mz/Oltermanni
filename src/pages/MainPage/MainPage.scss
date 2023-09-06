@@ -114,9 +114,9 @@
     .info-content__top-container{
       h1{
         color: $color-red;
-        font-size: 40px;
+        font-size: 3em;
         line-height: 46px;
-        font-family: PFDinTextCondPro-Regular;
+        font-family: PFDinTextCondPro-Medium;
         text-shadow: -2px 2px 0 #FFFFFF;
         font-style: normal;
         text-transform: uppercase;
@@ -159,6 +159,8 @@
         span{
           margin-top: 1em;
           color: $font-color;
+          font-family: PFDinTextCondPro-Regular;
+          font-size: 18px;
         }
         /*&:after{
           position: absolute;
@@ -192,6 +194,7 @@
 
     h1{
       color: $font-color;
+      font-family: PFDinTextCondPro-Regular;
     }
   }
 }

@@ -4,6 +4,13 @@ import {Link} from "react-scroll";
 import "./Footer.scss"
 import "/src/fonts.scss"
 
+import Img_facebook from "../../../public/images/facebook.svg"
+import Img_vk from "../../../public/images/vk.svg"
+import Img_in from "../../../public/images/in.svg"
+import Img_twitter from "../../../public/images/twitter.svg"
+import Img_instagram from "../../../public/images/instagram.svg"
+import Img_pinterest from "../../../public/images/pinterest.svg"
+
 export const Footer = () => {
     return (
         <footer>
@@ -19,7 +26,7 @@ export const Footer = () => {
                             Обратная связь
                         </li>
                         <li>
-                            <Link to="rools" smooth={true} duration={1000} spy={true} offset={-150}>
+                            <Link className={"footer-nav__rools-link"} to="rools" smooth={true} duration={1000} spy={true} offset={-150}>
                                 Правила акции
                             </Link>
                         </li>
@@ -34,22 +41,22 @@ export const Footer = () => {
                     </span>
                     <ul className={"join-us__c-media-container"}>
                         <li className="c-media">
-                            <img src="/images/facebook.svg"/>
+                            <img src={Img_facebook} alt={"facebook"}/>
                         </li>
                         <li className="c-media">
-                            <img src="/images/vk.svg"/>
+                            <img src={Img_vk} alt={"vk"}/>
                         </li>
                         <li className="c-media">
-                            <img src="/images/in.svg"/>
+                            <img src={Img_in} alt={"in"}/>
                         </li>
                         <li className="c-media">
-                            <img src="/images/twitter.svg"/>
+                            <img src={Img_twitter} alt={"twitter"}/>
                         </li>
                         <li className="c-media">
-                            <img src="/images/instagram.svg"/>
+                            <img src={Img_instagram} alt={"instagram"}/>
                         </li>
                         <li className="c-media">
-                            <img src="/images/pinterest.svg"/>
+                            <img src={Img_pinterest} alt={"pinterest"}/>
                         </li>
                     </ul>
                 </div>

@@ -39,10 +39,20 @@ footer {
     .footer-nav__menu{
       display: flex;
       list-style: none;
+      transition: color 0.5s;
+
+      .footer-nav__rools-link{
+        transition: color 0.5s;
+        &:hover{
+          cursor: pointer;
+          color: $color-red;
+        }
+      }
 
       li{
         &:hover{
           cursor: pointer;
+          color: $color-red;
         }
         &:not(&:last-child){
           margin-right: 3em;
