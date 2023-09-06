@@ -82,7 +82,7 @@ export const MainPage = () => {
             </Element>
             <Promo/>
             <div className={"body-content__body-end"}>
-                <h1>ПРИЗЫ</h1>
+
             </div>
         </div>
     );

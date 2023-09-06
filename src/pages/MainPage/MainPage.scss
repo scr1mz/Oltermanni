@@ -187,15 +187,9 @@
   }
 
   .body-content__body-end{
-    display: flex;
-    height: 15em;
-    background-color: $back-color1;
-    justify-content: center;
-
-    h1{
-      color: $font-color;
-      font-family: PFDinTextCondPro-Regular;
-    }
+    height: 10em;
+    background: $back-color1;
+    border-radius: 0 0 10px 10px;
   }
 }
 
