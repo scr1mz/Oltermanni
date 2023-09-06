@@ -28,17 +28,32 @@ export const ProductSwiper = () => {
         {
             id: 3,
             image: product3Image,
-            title: 'Сливочный, брусок 200, 300 г',
+            title: 'Сливочный, брусок 200 г',
         },
         {
             id: 4,
             image: product4Image,
-            title: 'Сливочный, слайсы 130, 250 г',
+            title: 'Сливочный, слайсы 130 г',
         },
         {
             id: 5,
             image: product5Image,
             title: 'Лёгкий, слайсы 225 г',
+        },
+        {
+            id: 6,
+            image: product4Image,
+            title: 'Сливочный, слайсы 250 г',
+        },
+        {
+            id: 7,
+            image: product3Image,
+            title: 'Сливочный брусок, 300 г',
+        },
+        {
+            id: 8,
+            image: product5Image,
+            title: 'Лёгкий, слайсы 300 г',
         },
     ];
 
