@@ -3,6 +3,8 @@ import "./Header.scss"
 import "../../fonts.scss"
 import {Link} from "react-scroll";
 
+import "../../../public/Fonts/PFDinTextCondPro-Regular.ttf"
+
 export const Header = () => {
 
     return (
