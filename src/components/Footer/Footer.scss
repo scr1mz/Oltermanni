@@ -5,11 +5,13 @@ footer {
   height: 130px;
   color: $font-color;
   font-family: PFDinTextCondPro-Regular;
-
+  //Основной блок с контентом
   .footer__content{
     display: flex;
     margin: 0 5em 0 5em;
+    justify-content: center;
 
+    //Блок футера контакты
     .footer__contacts {
       display: flex;
       flex-direction: column;
@@ -18,7 +20,7 @@ footer {
         text-transform: uppercase;
         font-size: small;
       }
-
+      //Номер в футере в блоке контакты
       .footer__number{
         color: $color-red;
         font-family: PFDinTextCondPro-Bold;
@@ -33,14 +35,16 @@ footer {
     }
 
   }
-
+  //Блок навигация футера
   .footer__nav{
     margin: 0 11em 0 11em;
+    //ul
     .footer-nav__menu{
       display: flex;
       list-style: none;
       transition: color 0.5s;
 
+      //ссылка на правила
       .footer-nav__rools-link{
         transition: color 0.5s;
         &:hover{
@@ -48,7 +52,7 @@ footer {
           color: $color-red;
         }
       }
-
+      //пункты навигации футера
       li{
         &:hover{
           cursor: pointer;
@@ -61,7 +65,7 @@ footer {
     }
   }
 
-  .footer__join-us{
+  .join-us{
     margin-top: 1em;
 
     .join-us__c-media-container{
@@ -82,6 +86,52 @@ footer {
           margin-right: 7px;
         }
       }
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  footer{
+    flex:1;
+    .footer__content{
+      flex-direction: column;
+
+      .footer__contacts{
+        align-items: center;
+        margin-top: 4em;
+        h4{
+          margin-bottom: -1px;
+        }
+        .footer__author{
+          position: absolute;
+          margin: 15em 0 0 0;
+        }
+      }
+
+      .footer__nav{
+        position: absolute;
+        margin: 0 0 12em 0;
+        .footer__nav-menu{
+
+          li{
+            &:not(&:last-child){
+              margin-right: 10em;
+            }
+          }
+        }
+      }
+
+
+      .join-us{
+        margin-top: 1.5em;
+        padding-bottom: 2em;
+        text-align: center;
+        .join-us__c-media-container{
+            justify-content: center;
+        }
+      }
+
     }
   }
 

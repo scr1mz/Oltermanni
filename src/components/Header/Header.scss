@@ -8,7 +8,7 @@ header.is-fixed {
 
 header {
   display: flex;
-  padding: 0 135px;
+  padding: 0 7em;
   align-items: center;
   width: 100%;
   height: 82px;
@@ -22,6 +22,10 @@ header {
   text-transform: uppercase;
 }
 
+.mobile-menu-button{
+  display: none;
+}
+
 a{
   text-decoration: none;
   color: $font-color;
@@ -30,8 +34,7 @@ a{
 
 .header__logo {
   img {
-    width: 177px;
-    height: 27px;
+    height: auto;
   }
 }
 
@@ -82,6 +85,38 @@ a{
 
   a {
     text-transform: uppercase;
+  }
+
+}
+
+@media (max-width: 576px) {
+  header{
+    height: 62px;
+    padding: 0 1em;
+
+    .mobile-menu-button{
+      display: flex;
+    }
+
+    .header__logo{
+        img{
+            width: 90%;
+        }
+    }
+    .Main-nav__menu{
+      display: none;
+    }
+    .header__registration{
+      display: none;
+    }
+    .header__auth-container{
+      .header__auth{
+        position: absolute;
+        right: 1.5em;
+        padding: 5px 20px;
+      }
+    }
+
   }
 
 }

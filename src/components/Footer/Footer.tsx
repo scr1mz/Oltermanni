@@ -18,7 +18,7 @@ export const Footer = () => {
                 <div className={"footer__contacts"}>
                     <h4>Информационная линия</h4>
                     <span className={"footer__number"}>8 800 333-15-25</span>
-                    <p>2020 ООО "Валио"</p>
+                    <p className={"footer__author"}>2020 ООО "Валио"</p>
                 </div>
                 <div className={"footer__nav"}>
                     <ul className={"footer-nav__menu"}>
@@ -35,7 +35,7 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={"footer__join-us"}>
+                <div className={"join-us"}>
                     <span>
                         Присоединяйтесь к нам
                     </span>

@@ -4,11 +4,12 @@ import {Promo} from "../../components/Promo/Promo"
 import {Element} from "react-scroll"
 
 import Img_kitchen from "../../../public/images/kitchen.png"
+import Img_balls from "../../../public/images/balls.png"
 import Img_ballsX2 from "../../../public/images/ballsX2.png"
 import Img_intro from "../../../public/images/intro.svg"
 import Img_banner from "../../../public/images/banner.png"
 import Img_tag from "../../../public/images/tag.png"
-import Img_baloon from "../../../public/images/baloon.svg"
+import Img_baloonX2 from "../../../public/images/baloon.svg"
 import Img_decor1 from "../../../public/images/decoration1.svg"
 import Img_decor2 from "../../../public/images/decoration2.svg"
 import Img_basket from "../../../public/images/basket.svg"
@@ -26,7 +27,7 @@ export const MainPage = () => {
                 <div className={"body-content__top-content top-content__container"}>
                     <div className={"top-content__image-stack-left"}>
                         <img className={"image-stack-left__kitchen"} src={Img_kitchen} alt={"kitchen"}/>
-                        <img className={"image-stack-left__balls"} src={Img_ballsX2} alt={"balls"}/>
+                        <img className={"image-stack-left__balls"} src={Img_balls} srcSet={Img_ballsX2} alt={"balls"}/>
                         <img className={"image-stack-left__intro"} src={Img_intro} alt={"intro"}/>
                     </div>
                     <div className={"top-content__image-stack-right"}>
@@ -36,9 +37,9 @@ export const MainPage = () => {
                 </div>
                 <a href="#" className={"Top-content__download-check"}>загрузить чек</a>
             </section>
-            <Element name="rools">
+            <Element className={"rools"} name="rools">
                 <section className={"body-content__info-content"}>
-                    <img className={"info-content__baloon"} src={Img_baloon} alt="baloon"/>
+                    <img className={"info-content__baloon"} src={Img_baloonX2} alt="baloon"/>
                     <img className={"info-content__decor1"} src={Img_decor1} alt="decor1"/>
                     <div className={"info-content__top-container"}>
                         <h1>нам 40 лет — вам подарки</h1>

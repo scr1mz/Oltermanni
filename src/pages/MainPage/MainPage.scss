@@ -10,14 +10,13 @@
   margin-top: 82px;
   overflow: hidden;
 
-//Top content of the body
+  //Top content of the body
   .body-content__top-content {
     position: relative;
     display: flex;
-    height: 100%;
     width: 120%;
     left: 50%;
-    padding-top: 1em;
+    padding-top: 0.5em;
     transform: translateX(-50%);
     background-color: $back-color1;
     border-radius: 0 0 50% 50% / 0 0 75% 75%;
@@ -27,6 +26,7 @@
       overflow: hidden;
       bottom: 20px;
       pointer-events: none;
+      max-width: 100%;
 
       .top-content__image-stack-left {
         display: flex;
@@ -89,7 +89,7 @@
       text-decoration: none;
       transform: translateX(-50%);
       z-index: 20;
-      transition: margin 0.2s, background-color 0.2s , box-shadow 0.1s;
+      transition: margin 0.2s, background-color 0.2s, box-shadow 0.1s;
 
       &:hover {
         cursor: pointer;
@@ -111,8 +111,8 @@
     margin-top: -210px;
     z-index: 1;
 
-    .info-content__top-container{
-      h1{
+    .info-content__top-container {
+      h1 {
         color: $color-red;
         font-size: 3em;
         line-height: 46px;
@@ -122,26 +122,27 @@
         text-transform: uppercase;
       }
     }
-    .info-content__baloon{
+
+    .info-content__baloon {
       position: absolute;
       align-self: flex-start;
-      margin: -2em 0 0 3em;
+      margin: -1em 0 0 3em;
     }
 
-    .info-content__decor1{
+    .info-content__decor1 {
       position: absolute;
       align-self: flex-end;
       margin: 0 4em 0 0;
     }
 
-    .info-content__decor2{
+    .info-content__decor2 {
       position: absolute;
       align-self: flex-start;
-      margin: 16.5em 0 0 15em;
+      margin: 18.5em 0 0 15em;
     }
 
     //general rools container
-    .info-content__bottom-container{
+    .info-content__bottom-container {
       position: relative;
       display: flex;
       justify-content: space-between;
@@ -149,19 +150,20 @@
       width: 80%;
 
       //single rool container
-      .info-content__rool-container{
+      .info-content__rool-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 10em;
         text-align: center;
 
-        span{
+        span {
           margin-top: 1em;
           color: $font-color;
           font-family: PFDinTextCondPro-Regular;
           font-size: 18px;
         }
+
         /*&:after{
           position: absolute;
           content: "";
@@ -172,7 +174,8 @@
           margin-left: 10px;
         }*/
       }
-      .info-content__arrow{
+
+      .info-content__arrow {
         padding-top: 2.5em;
       }
 
@@ -182,14 +185,80 @@
 
 
   //promotion section
-  .body-content__promo-section{
+  .body-content__promo-section {
     height: 27em;
   }
 
-  .body-content__body-end{
+  .body-content__body-end {
     height: 10em;
     background: $back-color1;
     border-radius: 0 0 15px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .body-content {
+    margin-top: 62px;
+
+
+    //rools-container
+    .body-content__info-content {
+
+      .info-content__baloon {
+        width: 15%;
+        margin: 10.5em 0 0 1.5em;
+      }
+
+      .info-content__decor1 {
+        position: absolute;
+        align-self: flex-end;
+        margin: 11em 3em 0 0;
+        width: 7%;
+        height: auto;
+      }
+
+      .info-content__decor2 {
+        position: absolute;
+        align-self: flex-start;
+        bottom: -1.5em;
+        margin-left: 3em;
+        width: 12%;
+      }
+
+      .info-content__top-container {
+        display: flex;
+        margin-top: 2em;
+
+        h1 {
+          text-align: center;
+          font-size: 2.5em;
+        }
+      }
+
+      //general rools container
+      .info-content__bottom-container {
+        flex-direction: column;
+        align-items: center;
+
+        span {
+          margin-top: 1em;
+          color: $font-color;
+          font-family: PFDinTextCondPro-Regular;
+          font-size: 18px;
+        }
+
+      }
+
+      .info-content__arrow {
+        padding-top: 2.5em;
+        transform: rotate(90deg);
+        margin-left: 2em;
+        height: auto;
+        width: 1em;
+      }
+
+    }
+
   }
 }
 
