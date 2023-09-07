@@ -2,26 +2,22 @@ import React, {useState} from "react";
 import "./Header.scss"
 import "../../fonts.scss"
 import {Link} from "react-scroll";
-import {FaBars} from "react-icons/fa";
+import {FaBars, FaTimes} from "react-icons/fa";
 
 import Img_logo from "../../../public/images/logo.svg"
 
 import {MobileMenu} from "../MobileMenu/MobileMenu";
+import {useMobileMenu} from "../MobileMenuProvider/MobileMenuProvider";
 
 
-export const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
+export const Header: React.FC = () => {
+    const {isOpen, toggleMenu} = useMobileMenu();
 
-    const toggleMobileMenu = () => {
-        setIsOpen(!isOpen);
-    };
-    /*<button className="mobile-menu-button" onClick={toggleMobileMenu}>
-        <FaBars />
-    </button>
-    <MobileMenu isOpen={isOpen} onClose={toggleMobileMenu} />*/
     return (
         <header className={"is-fixed"}>
-
+            <button className="mobile-menu-button" onClick={toggleMenu}>
+                {isOpen ? <FaTimes className={"burger-open"}/> : <FaBars className={"burger-close"}/>}
+            </button>
             <div className={"header__logo"}>
                 <a href={"/"} className={"logo__home-link--active"}>
                     <img src={Img_logo} alt="oltermanni"/>

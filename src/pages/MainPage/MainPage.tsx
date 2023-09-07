@@ -1,7 +1,8 @@
 import React from "react";
 import "./MainPage.scss";
-import {Promo} from "../../components/Promo/Promo"
 import {Element} from "react-scroll"
+
+import {Promo} from "../../components/Promo/Promo"
 
 import Img_kitchen from "../../../public/images/kitchen.png"
 import Img_balls from "../../../public/images/balls.png"
@@ -18,9 +19,9 @@ import Img_computer from "../../../public/images/computer.svg"
 import Img_mobile from "../../../public/images/mobile.svg"
 import Img_draw from "../../../public/images/draw.svg"
 import Img_ticket from "../../../public/images/ticket.svg"
+import {useMobileMenu} from "../../components/MobileMenuProvider/MobileMenuProvider";
 
-export const MainPage = () => {
-
+export const MainPage: React.FC = () => {
     return (
         <div className={"body-content"}>
             <section className={"body-content__top-content"}>

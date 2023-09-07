@@ -3,7 +3,7 @@
 
 header.is-fixed {
   position: fixed;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 header {
@@ -89,6 +89,14 @@ a{
 
 }
 
+.burger-open{
+  border: none;
+}
+
+.burger-close{
+
+}
+
 @media (max-width: 576px) {
   header{
     height: 62px;
@@ -99,6 +107,8 @@ a{
     }
 
     .header__logo{
+      position: absolute;
+      left: 3.5em;
         img{
             width: 90%;
         }
