@@ -70,6 +70,26 @@ export const ProductSwiper = () => {
                 grabcursor={'true'}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
+                breakpoints= {{
+                    //ширина >= 320px
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 0
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 0
+                    },
+                    700: {
+                        slidesPerView: 3,
+                        spaceBetween: 0
+                    },
+                    1000: {
+                        slidesPerView: 4,
+                        spaceBetween: 10
+                    },
+                }
+                }
             >
                 {slides.map((slide) => (
                     <SwiperSlide key={slide.id}>

@@ -41,6 +41,8 @@
   }
 
   .swiper-button-prev {
+    position: absolute;
+    left: 0;
     color: $font-color;
     transition: color 0.5s;
     top: 40%;
@@ -51,6 +53,8 @@
   }
 
   .swiper-button-next {
+    position: absolute;
+    right: 0;
     color: $font-color;
     transition: color 0.5s;
     top: 40%;
@@ -69,4 +73,17 @@
 
   }
 
+}
+
+@media (max-width: 576px) {
+
+
+
+  .swiper-button-prev {
+      margin-left: 3em;
+  }
+
+  .swiper-button-next {
+      margin-right: 3em;
+  }
 }

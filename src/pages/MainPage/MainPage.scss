@@ -10,6 +10,15 @@
   margin-top: 82px;
   overflow: hidden;
 
+  img{
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
   //Top content of the body
   .body-content__top-content {
     position: relative;
@@ -36,14 +45,17 @@
           height: 23em;
           width: 100%;
           margin: 15em 0 0 8em;
+          object-fit: cover;
         }
 
         .image-stack-left__balls {
           height: auto;
-          width: 35%;
+          min-width: 30em;
+          width: 30%;
           position: absolute;
           z-index: 15;
           margin: 3.5em 0 0 25em;
+          object-fit: cover;
         }
 
         .image-stack-left__intro {
@@ -63,13 +75,17 @@
           position: absolute;
           margin: -4em 0 0 22em;
           z-index: 10;
+          object-fit: cover;
         }
 
         .oltermanni-banner {
-          height: 28em;
-          width: 35em;
+          max-height: 28em;
+          max-width: 35em;
+          min-width: 27em;
+          width: 50%;
           position: absolute;
           z-index: 5;
+          object-fit: cover;
         }
       }
     }
@@ -196,10 +212,31 @@
   }
 }
 
+@media (max-width: 1200px) {
+
+  .top-content__image-stack-right {
+    display: inline-block;
+    margin: 11em 0 0 10em;
+  }
+
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
+    height: 23em;
+    width: 100%;
+    margin: 15em 0 0 7em;
+    object-fit: cover;
+  }
+
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right {
+    margin: 11em 0 0 -11em;
+  }
+}
+
 @media (max-width: 576px) {
   .body-content {
     margin-top: 62px;
-
+      .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
+        margin: 10em 0 0 2em;
+      }
 
     //rools-container
     .body-content__info-content {
