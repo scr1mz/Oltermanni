@@ -50,30 +50,35 @@
 
         .image-stack-left__balls {
           height: auto;
-          min-width: 30em;
+          min-width: 25em;
           width: 30%;
           position: absolute;
           z-index: 15;
-          margin: 3.5em 0 0 25em;
+          margin: 5% 0 0 30%;
           object-fit: cover;
         }
 
         .image-stack-left__intro {
           height: auto;
+          min-height: 10em;
+          min-width: 15em;
           width: 33%;
           position: absolute;
           z-index: 12;
-          margin: 0.5em 0 0 16em;
+          margin: 1% 0 0 18%;
         }
       }
 
       .top-content__image-stack-right {
         display: inline-block;
         margin: 11em 0 0 -12em;
+        object-fit: cover;
 
         .oltermanni-tag {
           position: absolute;
-          margin: -4em 0 0 22em;
+          width: 100%;
+          max-width: 10em;
+          margin: -4.5em 0 0 23em;
           z-index: 10;
           object-fit: cover;
         }
@@ -81,8 +86,8 @@
         .oltermanni-banner {
           max-height: 28em;
           max-width: 35em;
-          min-width: 27em;
-          width: 50%;
+          min-width: 30em;
+          width: 100%;
           position: absolute;
           z-index: 5;
           object-fit: cover;
@@ -193,12 +198,12 @@
 
       .info-content__arrow {
         padding-top: 2.5em;
+        min-width: 2.5em;
+        height: 3em;
       }
-
     }
 
   }
-
 
   //promotion section
   .body-content__promo-section {
@@ -214,38 +219,90 @@
 
 @media (max-width: 1200px) {
 
-  .top-content__image-stack-right {
-    display: inline-block;
-    margin: 11em 0 0 10em;
-  }
-
+  //Кухня
   .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
-    height: 23em;
-    width: 100%;
     margin: 15em 0 0 7em;
-    object-fit: cover;
+  }
+  //Шары
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__balls {
+   // margin: 3.5em 0 0 25em;
+    margin: 6% 0 0 30%;
   }
 
+  //Правый блок картинок
   .body-content .body-content__top-content .top-content__container .top-content__image-stack-right {
-    margin: 11em 0 0 -11em;
+    margin: 10.5em 0 0 -11em;
   }
 }
 
-@media (max-width: 576px) {
+//........//
+@media (max-width: 1050px) {
+  //Кухня
+    .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
+      margin: 15em 0 0 5em;
+    }
+  //Стрелки правил
+  .body-content .body-content__info-content .info-content__arrow {
+      margin-left: -0.5em;
+  }
+
+  //Шары
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__balls {
+    //margin: 3.5em 0 0 18em;
+    margin: 7% 0 0 29%;
+  }
+  //Сыр вашему дому
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__intro {
+    //margin: 0.5em 0 0 12em;
+    margin: 2% 0 0 17%;
+  }
+
+
+}
+
+@media (max-width: 900px) {
+
+  //Кухня
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
+    margin: 15em 0 0 -3em;
+  }
+  //Шары
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__balls {
+    //margin: 4em 0 0 15em;
+    margin: 8% 0 0 26%;
+  }
+  //Сыр вашему дому
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__intro {
+    //margin: 2em 0 0 11em;
+    margin: 4% 0 0 17%;
+  }
+
+  //Правый блок картинок
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right {
+    margin: 16% 0 0 -15%;
+  }
+
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-banner {
+    width: 50%;
+    min-height: 28em;
+  }
+  //бирка
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-tag {
+    margin: -6% 0 0 30%;
+    width: 10em;
+    height: 10em;
+  }
+
   .body-content {
-    margin-top: 62px;
-      .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
-        margin: 10em 0 0 2em;
-      }
 
     //rools-container
     .body-content__info-content {
 
+      //Украшения
       .info-content__baloon {
         width: 15%;
         margin: 10.5em 0 0 1.5em;
       }
-
       .info-content__decor1 {
         position: absolute;
         align-self: flex-end;
@@ -253,7 +310,6 @@
         width: 7%;
         height: auto;
       }
-
       .info-content__decor2 {
         position: absolute;
         align-self: flex-start;
@@ -262,6 +318,7 @@
         width: 12%;
       }
 
+      //Нам 40 лет - вам подарки
       .info-content__top-container {
         display: flex;
         margin-top: 2em;
@@ -283,9 +340,9 @@
           font-family: PFDinTextCondPro-Regular;
           font-size: 18px;
         }
-
       }
 
+      //rools arrows
       .info-content__arrow {
         padding-top: 2.5em;
         transform: rotate(90deg);
@@ -293,9 +350,46 @@
         height: auto;
         width: 1em;
       }
-
     }
+  }
 
+}
+
+@media (max-width: 800px) {
+
+  .body-content {
+    margin-top: 62px;
+    .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
+      margin: 14em 0 0 2em;
+    }
+  }
+
+  //Шары
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__balls {
+    //margin: 4em 0 0 15em;
+    margin: 8% 0 0 20%;
+  }
+  //Сыр вашему дому
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__intro {
+    //margin: 2em 0 0 11em;
+    margin: 6% 0 0 13%;
+  }
+
+  //Правый блок картинок
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right {
+    margin: 14.5% 0 0 -15%;
   }
 }
 
+
+//Мобильная адаптация
+@media (max-width: 576px) {
+  .body-content {
+    margin-top: 62px;
+    .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
+      margin: 10em 0 0 2em;
+    }
+
+  }
+
+}
