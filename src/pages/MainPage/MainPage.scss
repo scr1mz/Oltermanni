@@ -10,7 +10,7 @@
   margin-top: 82px;
   overflow: hidden;
 
-  img{
+  img {
     height: auto;
     max-width: 100%;
     background-size: cover;
@@ -225,7 +225,7 @@
   }
   //Шары
   .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__balls {
-   // margin: 3.5em 0 0 25em;
+    // margin: 3.5em 0 0 25em;
     margin: 6% 0 0 30%;
   }
 
@@ -233,17 +233,19 @@
   .body-content .body-content__top-content .top-content__container .top-content__image-stack-right {
     margin: 10.5em 0 0 -11em;
   }
+
+
 }
 
 //........//
 @media (max-width: 1050px) {
   //Кухня
-    .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
-      margin: 15em 0 0 5em;
-    }
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
+    margin: 15em 0 0 5em;
+  }
   //Стрелки правил
   .body-content .body-content__info-content .info-content__arrow {
-      margin-left: -0.5em;
+    margin-left: -0.5em;
   }
 
   //Шары
@@ -281,19 +283,28 @@
   .body-content .body-content__top-content .top-content__container .top-content__image-stack-right {
     margin: 16% 0 0 -15%;
   }
-
+  //Баннер
   .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-banner {
     width: 50%;
     min-height: 28em;
   }
-  //бирка
+  //Бирка
   .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-tag {
     margin: -6% 0 0 30%;
     width: 10em;
     height: 10em;
   }
+  //Нижняя граница для блока с картинками
+  .body-content .body-content__top-content {
+    background: $back-gradient-color;
+    border-radius: 0 0 50% 50%/0 0 40% 40%;
+  }
+
 
   .body-content {
+    .body-content__top-content {
+      padding-top: 0;
+    }
 
     //rools-container
     .body-content__info-content {
@@ -303,6 +314,7 @@
         width: 15%;
         margin: 10.5em 0 0 1.5em;
       }
+
       .info-content__decor1 {
         position: absolute;
         align-self: flex-end;
@@ -310,6 +322,7 @@
         width: 7%;
         height: auto;
       }
+
       .info-content__decor2 {
         position: absolute;
         align-self: flex-start;
@@ -356,12 +369,18 @@
 }
 
 @media (max-width: 800px) {
-
   .body-content {
     margin-top: 62px;
+
     .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
-      margin: 14em 0 0 2em;
+      margin: 14em 0 0 -10%;
     }
+  }
+
+  //Нижняя обводка у блока картинок
+  .body-content .body-content__top-content {
+    background: $back-gradient-color;
+    border-radius: 0 0 50% 50%/0 0 20% 20%;
   }
 
   //Шары
@@ -371,13 +390,29 @@
   }
   //Сыр вашему дому
   .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__intro {
-    //margin: 2em 0 0 11em;
     margin: 6% 0 0 13%;
   }
-
   //Правый блок картинок
   .body-content .body-content__top-content .top-content__container .top-content__image-stack-right {
-    margin: 14.5% 0 0 -15%;
+    margin: 25% 0 0 -15%;
+  }
+  //Баннер
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-banner {
+    min-height: 22em;
+    min-width: 15em;
+  }
+  //Бирка
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-tag {
+    margin: -2% 0 0 35%;
+    width: 7em;
+    height: 7em;
+  }
+}
+
+@media (max-width: 700px) {
+  //Правый блок картинок
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right {
+    margin: 32% 0 0 -15%;
   }
 }
 
@@ -386,10 +421,106 @@
 @media (max-width: 576px) {
   .body-content {
     margin-top: 62px;
+    //Кухня
     .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
       margin: 10em 0 0 2em;
+      height: 18em;
     }
+    //Левый блок картинок
+    .body-content__top-content .top-content__container .top-content__image-stack-left {
+      margin: 0 0 0 -5%;
+    }
+    //Правый блок картинок
+    .body-content__top-content .top-content__container .top-content__image-stack-right {
+      margin: 20% 0 0 -15%;
+    }
+    //Шары
+    .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__balls {
+      margin: 10% 0 0 20%;
+      min-width: 20em;
+    }
+    //Баннер
+    .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-banner {
+      min-height: 10em;
+      min-width: 10em;
+      width: 10em;
+      height: 15em;
+    }
+    //Бирка
+    .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-tag {
+      margin: -2% 0 0 35%;
+      width: 7em;
+      height: 7em;
+    }
+    //Нижняя обводка у блока картинок
+    .body-content__top-content {
+      background: $back-gradient-color;
+      border-radius: 0 0 50% 50%/0 0 20% 20%;
+    }
+  }
+}
 
+@media (max-width: 420px) {
+  //Баннер
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-banner {
+    min-height: 15em;
+    min-width: 15em;
+  }
+  //Бирка
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-tag {
+    margin: -4% 0 0 35%;
+    width: 5em;
+    height: 5em;
   }
 
+  //Правый блок картинок
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right {
+    margin: 37% 0 0 -15%;
+  }
+
+
+  //Кухня
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
+    margin: 10em 0 0 2em;
+    height: 15em;
+  }
+}
+
+@media (max-width: 375px) {
+  //Баннер
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-banner {
+    min-height: 15em;
+    min-width: 10em;
+  }
+  //Бирка
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right .oltermanni-tag {
+    margin: -4% 0 0 35%;
+    width: 4.5em;
+    height: 4.5em;
+  }
+
+  //Правый блок картинок
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-right {
+    margin: 37% 0 0 -15%;
+  }
+
+  //Сыр вашему дому
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__intro {
+    margin: 6% 0 0 13%;
+    min-width: 10em;
+    min-height: 7em;
+  }
+
+  //Шары
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__balls {
+    margin: 10% 0 0 12%;
+    min-width: 18em;
+  }
+
+  //Кухня
+  .body-content .body-content__top-content .top-content__container .top-content__image-stack-left .image-stack-left__kitchen {
+    margin: 10em 0 0 2em;
+    height: 15em;
+    width: 15em;
+  }
 }

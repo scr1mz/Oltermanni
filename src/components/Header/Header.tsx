@@ -6,12 +6,23 @@ import {FaBars, FaTimes} from "react-icons/fa";
 
 import Img_logo from "../../../public/images/logo.svg"
 
-import {MobileMenu} from "../MobileMenu/MobileMenu";
 import {useMobileMenu} from "../MobileMenuProvider/MobileMenuProvider";
+import {Modal} from "../Modal/Modal";
 
 
 export const Header: React.FC = () => {
     const {isOpen, toggleMenu} = useMobileMenu();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    // Функция для открытия модального окна
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    // Функция для закрытия модального окна
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
 
     return (
         <header className={"is-fixed"}>
@@ -26,26 +37,31 @@ export const Header: React.FC = () => {
             <nav className={"Main-nav"}>
                 <ul className={"Main-nav__menu"}>
                     <li className={"Main-nav__link--active"}>
-                        <Link to="rools" smooth={true} duration={1000} spy={true} offset={-150}>
+                        <Link to="rools" smooth={true} duration={1000} spy={true} offset={-150} className={"Main-nav__link--active"}>
                             правила
                         </Link>
                     </li>
                     <li className={"Main-nav__link--active"}>
-                        <a href={"#"}>призы</a>
+                        <Link to="footer" smooth={true} duration={1200} spy={true} offset={0} className={"Main-nav__link--active"}>
+                            призы
+                        </Link>
                     </li>
                     <li className={"Main-nav__link--active"}>
-                        <a href={"#"}>победители</a>
+                        <Link to="footer" smooth={true} duration={1200} spy={true} offset={0} className={"Main-nav__link--active"}>
+                            победители
+                        </Link>
                     </li>
                 </ul>
             </nav>
             <div className={"header__auth-container"}>
-                <a className={"header__auth"}>
+                <a className={"header__auth"} onClick={openModal}>
                     вход
                 </a>
-                <a className={"header__registration"}>
+                <a className={"header__registration"} onClick={openModal}>
                     регистрация
                 </a>
             </div>
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
         </header>
     );
 };
