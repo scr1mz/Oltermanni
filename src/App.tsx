@@ -2,11 +2,11 @@ import React, {useRef,  useState, useEffect} from "react";
 
 import {Header} from "./components/Header/Header";
 import {Footer} from "./components/Footer/Footer";
-import {MainPage} from "./pages/MainPage"
+import {MainPage} from "./pages/MainPage/MainPage"
 import "./App.scss"
 
 import {useMobileMenu} from "./components/MobileMenuProvider/MobileMenuProvider";
-import {MobileMenu} from "./components/MobileMenu";
+import {MobileMenu} from "./components/MobileMenu/MobileMenu";
 import { useSwipeable } from 'react-swipeable';
 import {Element} from "react-scroll";
 

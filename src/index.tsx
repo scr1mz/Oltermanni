@@ -4,7 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import App from './App';
 import "./index.scss"
 
-import {MobileMenuProvider} from "./components/MobileMenuProvider";
+import {MobileMenuProvider} from "./components/MobileMenuProvider/MobileMenuProvider";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

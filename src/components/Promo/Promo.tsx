@@ -2,8 +2,8 @@ import React from "react";
 
 import "./Promo.scss"
 import "/src/fonts.scss"
-import {ProductSlider} from "../PromoSlider/PromoSlider";
-import {ProductSwiper} from "../PromoSwiper";
+
+import {ProductSwiper} from "../PromoSwiper/PromoSwiper";
 
 export const Promo = () => {
     return(

@@ -1,1 +1,0 @@
-export {ProductSwiper} from "./PromoSwiper"
