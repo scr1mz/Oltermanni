@@ -3,12 +3,12 @@ import {Link} from "react-scroll";
 import {useMobileMenu} from '../MobileMenuProvider/MobileMenuProvider';
 import "./MobileMenu.scss"
 
-import Img_facebook from "../../../public/images/facebook.svg";
-import Img_vk from "../../../public/images/vk.svg";
-import Img_in from "../../../public/images/in.svg";
-import Img_twitter from "../../../public/images/twitter.svg";
-import Img_instagram from "../../../public/images/instagram.svg";
-import Img_pinterest from "../../../public/images/pinterest.svg";
+import Img_facebook from "../../assets/icons/facebook.svg";
+import Img_vk from "../../assets/icons/vk.svg";
+import Img_in from "../../assets/icons/in.svg";
+import Img_twitter from "../../assets/icons/twitter.svg";
+import Img_instagram from "../../assets/icons/instagram.svg";
+import Img_pinterest from "../../assets/icons/pinterest.svg";
 
 interface MobileMenuProps {
     isOpen: boolean;

@@ -4,7 +4,7 @@ import "../../fonts.scss"
 import {Link} from "react-scroll";
 import {FaBars, FaTimes} from "react-icons/fa";
 
-import Img_logo from "../../../public/images/logo.svg"
+import Img_logo from "../../assets/header/logo.svg"
 
 import {useMobileMenu} from "../MobileMenuProvider/MobileMenuProvider";
 import {Modal} from "../Modal/Modal";

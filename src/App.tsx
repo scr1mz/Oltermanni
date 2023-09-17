@@ -7,7 +7,6 @@ import "./App.scss"
 
 import {useMobileMenu} from "./components/MobileMenuProvider/MobileMenuProvider";
 import {MobileMenu} from "./components/MobileMenu/MobileMenu";
-import { useSwipeable } from 'react-swipeable';
 import {Element} from "react-scroll";
 
 function App() {
@@ -18,11 +17,11 @@ function App() {
     useEffect(() => {
         const handleScroll = () => {
             if (isOpen && !isScrolling) {
-                toggleMenu(); // Закрываем мобильное меню при прокручивании
+                toggleMenu();
                 setIsScrolling(true);
                 setTimeout(() => {
                     setIsScrolling(false);
-                }, 1000); // Можно настроить задержку перед следующим закрытием
+                }, 1000);
             }
         };
 

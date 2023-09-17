@@ -6,11 +6,11 @@ import 'swiper/swiper-bundle.css';
 import './PromoSwiper.scss'
 
 // Импорт картинок
-import product1Image from '../../../public/images/product1.png';
-import product2Image from '../../../public/images/product2.png';
-import product3Image from '../../../public/images/product3.png';
-import product4Image from '../../../public/images/product4.png';
-import product5Image from '../../../public/images/product2.png';
+import product1Image from '../../assets/content/promo/product1.png';
+import product2Image from '../../assets/content/promo/product2.png';
+import product3Image from '../../assets/content/promo/product3.png';
+import product4Image from '../../assets/content/promo/product4.png';
+import product5Image from '../../assets/content/promo/product2.png';
 
 export const ProductSwiper = () => {
 
