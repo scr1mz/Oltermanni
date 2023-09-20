@@ -5,8 +5,10 @@ footer {
   height: 130px;
   color: $font-color;
   font-family: PFDinTextCondPro-Regular;
+  font-weight: 600;
+
   //Основной блок с контентом
-  .footer__content{
+  .footer__content {
     display: flex;
     margin: 0 5em 0 5em;
     justify-content: center;
@@ -16,49 +18,52 @@ footer {
       display: flex;
       flex-direction: column;
 
-      h4{
+      h4 {
         text-transform: uppercase;
         font-size: small;
       }
+
       //Номер в футере в блоке контакты
-      .footer__number{
+      .footer__number {
         color: $color-red;
         font-family: PFDinTextCondPro-Bold;
         font-weight: bold;
         font-size: 24px;
       }
 
-      p{
+      p {
         font-size: 12px;
       }
-
     }
-
   }
+
   //Блок навигация футера
-  .footer__nav{
+  .footer__nav {
     margin: 0 14% 0 14%;
     //ul
-    .footer-nav__menu{
+    .footer-nav__menu {
       display: flex;
       list-style: none;
       transition: color 0.5s;
 
       //ссылка на правила
-      .footer-nav__rules-link{
+      .footer-nav__rules-link {
         transition: color 0.5s;
-        &:hover{
+
+        &:hover {
           cursor: pointer;
           color: $color-red;
         }
       }
+
       //пункты навигации футера
-      li{
-        &:hover{
+      li {
+        &:hover {
           cursor: pointer;
           color: $color-red;
         }
-        &:not(&:last-child){
+
+        &:not(&:last-child) {
           margin-right: 3em;
         }
       }
@@ -67,15 +72,15 @@ footer {
 
 }
 
-.join-us{
+.join-us {
   margin-top: 1em;
 
-  .join-us__c-media-container{
+  .join-us__c-media-container {
     display: flex;
     list-style: none;
     padding-inline-start: 0;
 
-    .c-media{
+    .c-media {
       width: 8px;
       overflow: hidden;
       display: flex;
@@ -84,7 +89,12 @@ footer {
       background-color: $back-color1;
       padding: 7px 10px;
       border-radius: 4px;
-      &:not(&:last-child){
+
+      img{
+        pointer-events: none;
+      }
+
+      &:not(&:last-child) {
         margin-right: 7px;
       }
     }
@@ -92,31 +102,35 @@ footer {
 }
 
 @media (max-width: 767px) {
-  footer{
-    flex:1;
-    .footer__content{
+  footer {
+    flex: 1;
+
+    .footer__content {
       flex-direction: column;
 
-      .footer__contacts{
+      .footer__contacts {
         align-items: center;
         margin-top: 4em;
-        h4{
+
+        h4 {
           margin-bottom: -1px;
         }
-        .footer__author{
+
+        .footer__author {
           position: absolute;
           margin: 15em 0 0 0;
         }
       }
 
-      .footer__nav{
+      .footer__nav {
         position: absolute;
         align-self: center;
         margin: 0 0 12em 0;
-        .footer__nav-menu{
 
-          li{
-            &:not(&:last-child){
+        .footer__nav-menu {
+
+          li {
+            &:not(&:last-child) {
               margin-right: 10em;
             }
           }
@@ -124,12 +138,13 @@ footer {
       }
 
 
-      .join-us{
+      .join-us {
         margin-top: 1.5em;
         padding-bottom: 2em;
         text-align: center;
-        .join-us__c-media-container{
-            justify-content: center;
+
+        .join-us__c-media-container {
+          justify-content: center;
         }
       }
 

@@ -11,8 +11,11 @@
   flex: 1;
   height: 100%;
 
-  .swiper{
+  .swiper {
     height: 100%;
+    &:hover{
+      cursor: grab;
+    }
   }
   .swiper-slide {
     display: flex;
@@ -46,7 +49,6 @@
     color: $font-color;
     transition: color 0.5s;
     top: 40%;
-
     &:hover {
       color: $color-red;
     }
@@ -58,31 +60,22 @@
     color: $font-color;
     transition: color 0.5s;
     top: 40%;
-
     &:hover {
       color: $color-red;
     }
   }
-
   .swiper-pagination {
     bottom: 1em;
-
     .swiper-pagination-bullet {
       background-color: $font-color;
     }
-
   }
-
 }
 
 @media (max-width: 576px) {
-
-
-
   .swiper-button-prev {
       margin-left: 3em;
   }
-
   .swiper-button-next {
       margin-right: 3em;
   }

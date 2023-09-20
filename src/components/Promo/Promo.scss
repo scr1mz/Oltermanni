@@ -6,16 +6,16 @@
   flex-direction: column;
   align-items: center;
   margin-top: 1em;
+}
 
-  h1{
-    color: $font-color;
-    text-transform: uppercase;
-    font-family: PFDinTextCondPro-Regular;
-    font-size: 2em;
-  }
+.promo-title{
+  color: $font-color;
+  text-transform: uppercase;
+  font-family: PFDinTextCondPro-Regular;
+  font-size: 2em;
+}
 
-  .promo-section__slider-container{
-    width: 80%;
-    height: 100%;
-  }
+.promo-section__slider-container{
+  width: 80%;
+  height: 100%;
 }
