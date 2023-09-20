@@ -121,7 +121,7 @@
     }
   }
 
-  //rools section
+  //rules section
   .body-content__info-content {
     position: relative;
     display: flex;
@@ -144,7 +144,7 @@
       }
     }
 
-    .info-content__baloon {
+    .info-content__balloon {
       position: absolute;
       align-self: flex-start;
       margin: -1em 0 0 3em;
@@ -162,7 +162,7 @@
       margin: 18.5em 0 0 15em;
     }
 
-    //general rools container
+    //general rules container
     .info-content__bottom-container {
       position: relative;
       display: flex;
@@ -170,8 +170,8 @@
       padding-bottom: 3em;
       width: 80%;
 
-      //single rool container
-      .info-content__rool-container {
+      //single rule container
+      .info-content__rule-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -306,11 +306,11 @@
       padding-top: 0;
     }
 
-    //rools-container
+    //rules-container
     .body-content__info-content {
 
       //Украшения
-      .info-content__baloon {
+      .info-content__balloon {
         width: 15%;
         margin: 10.5em 0 0 1.5em;
       }
@@ -342,7 +342,7 @@
         }
       }
 
-      //general rools container
+      //general rules container
       .info-content__bottom-container {
         flex-direction: column;
         align-items: center;
@@ -355,7 +355,7 @@
         }
       }
 
-      //rools arrows
+      //rules arrows
       .info-content__arrow {
         padding-top: 2.5em;
         transform: rotate(90deg);

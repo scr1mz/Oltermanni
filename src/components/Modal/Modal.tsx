@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-import './Modal.scss';
+import React from 'react'
+import './Modal.scss'
 
 interface ModalProps {
-    isOpen: boolean;
-    onClose: () => void;
+  isOpen: boolean
+  onClose: () => void
 }
 
 export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
-    return isOpen ? (
+  return isOpen
+    ? (
         <div className="modal-overlay">
             <div className="modal-content">
                 <button className="modal-close-button" onClick={onClose}>
@@ -17,5 +18,6 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                 <p>Содержимое модального окна...</p>
             </div>
         </div>
-    ) : null;
-};
+      )
+    : null
+}
