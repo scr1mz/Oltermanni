@@ -22,6 +22,7 @@
         "no-irregular-whitespace": "warn",
         "react/no-unescaped-entities": "warn",
         "import/no-duplicates": "warn",
+        "@typescript-eslint/no-unused-vars": "warn",
         "@typescript-eslint/consistent-type-imports": ["error", { "prefer": "type-imports" }]
     }
 }

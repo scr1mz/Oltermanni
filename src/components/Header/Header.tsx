@@ -7,6 +7,7 @@ import Img_logo from '../../assets/header/logo.svg'
 
 import { useMobileMenu } from '../MobileMenuProvider/MobileMenuProvider'
 import { Modal } from '../Modal/Modal'
+import { BurgerIcon } from '../BurgerIcon/BurgerIcon'
 
 export const Header: React.FC = () => {
   const { isOpen, toggleMenu } = useMobileMenu()
@@ -21,12 +22,15 @@ export const Header: React.FC = () => {
   const closeModal = (): void => {
     setIsModalOpen(false)
   }
+  /* <button className="mobile-menu-button" onClick={toggleMenu}>
+        {isOpen ? <FaTimes className={'burger-open'}/> : <FaBars className={'burger-close'}/>}
+    </button> */
 
   return (
         <header className={'is-fixed'}>
-            <button className="mobile-menu-button" onClick={toggleMenu}>
-                {isOpen ? <FaTimes className={'burger-open'}/> : <FaBars className={'burger-close'}/>}
-            </button>
+            <div className="mobile-menu-button">
+                <BurgerIcon/>
+            </div>
             <div className={'header__logo'}>
                 <a href={'/'} className={'logo__home-link--active'}>
                     <img src={Img_logo} alt="oltermanni"/>

@@ -15,7 +15,7 @@ interface MobileMenuProps {
   onClose: () => void
 }
 
-export const MobileMenu: React.FC<MobileMenuProps> = () => {
+export const MobileMenu: React.FC = () => {
   const { isOpen, toggleMenu } = useMobileMenu()
 
   return (
