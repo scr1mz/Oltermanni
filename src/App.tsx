@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 
 import { Header } from './components/Header/Header'
 import { Footer } from './components/Footer/Footer'
@@ -12,30 +12,19 @@ import { Element } from 'react-scroll'
 function App (): JSX.Element {
   const { isOpen, toggleMenu, updateBurgerIcon } = useMobileMenu()
   const appRef = useRef<HTMLDivElement | null>(null)
-  const [isScrolling, setIsScrolling] = useState(false)
 
   useEffect(() => {
-    const handleScroll = (): void => {
-      if (isOpen && !isScrolling) {
-        toggleMenu()
-        updateBurgerIcon()
-        setIsScrolling(true)
-        setTimeout(() => {
-          setIsScrolling(false)
-        }, 1000)
-      }
+    if (!isOpen) {
+      return
     }
-
-    if (appRef.current != null) {
-      window.addEventListener('scroll', handleScroll)
-    }
+    window.addEventListener('scroll', toggleMenu)
+    window.addEventListener('scroll', updateBurgerIcon)
 
     return () => {
-      if (appRef.current != null) {
-        window.removeEventListener('scroll', handleScroll)
-      }
+      window.removeEventListener('scroll', toggleMenu)
+      window.removeEventListener('scroll', updateBurgerIcon)
     }
-  }, [isOpen, toggleMenu, isScrolling])
+  }, [isOpen, toggleMenu, updateBurgerIcon])
 
   return (
         <div className="App" ref={appRef}>

@@ -74,12 +74,11 @@ footer {
 
 .join-us {
   margin-top: 1em;
-}
-
-.join-us__c-media-container {
-  display: flex;
-  list-style: none;
-  padding-inline-start: 0;
+  &__c-media-container {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+  }
 }
 
 .c-media {
