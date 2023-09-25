@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './Header.scss'
 import { Link } from 'react-scroll'
-import { FaBars, FaTimes } from 'react-icons/fa'
 
 import Img_logo from '../../assets/header/logo.svg'
 

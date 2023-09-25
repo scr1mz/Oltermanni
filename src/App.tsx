@@ -10,7 +10,7 @@ import { MobileMenu } from './components/MobileMenu/MobileMenu'
 import { Element } from 'react-scroll'
 
 function App (): JSX.Element {
-  const { isOpen, toggleMenu } = useMobileMenu()
+  const { isOpen, toggleMenu, updateBurgerIcon } = useMobileMenu()
   const appRef = useRef<HTMLDivElement | null>(null)
   const [isScrolling, setIsScrolling] = useState(false)
 
@@ -18,6 +18,7 @@ function App (): JSX.Element {
     const handleScroll = (): void => {
       if (isOpen && !isScrolling) {
         toggleMenu()
+        updateBurgerIcon()
         setIsScrolling(true)
         setTimeout(() => {
           setIsScrolling(false)

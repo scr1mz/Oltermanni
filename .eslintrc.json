@@ -23,6 +23,7 @@
         "react/no-unescaped-entities": "warn",
         "import/no-duplicates": "warn",
         "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-unnecessary-boolean-literal-compare": "warn",
         "@typescript-eslint/consistent-type-imports": ["error", { "prefer": "type-imports" }]
     }
 }
