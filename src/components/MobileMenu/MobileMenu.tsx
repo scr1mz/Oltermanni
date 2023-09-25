@@ -51,22 +51,22 @@ export const MobileMenu: React.FC = () => {
                         Присоединяйтесь к нам
                     </span>
                     <ul className={'join-us__c-media-container'}>
-                        <li className="c-media" id={'mobile-menu__c-media'}>
+                        <li className="c-media mobile-menu__c-media">
                             <img src={Img_facebook} alt={'facebook'}/>
                         </li>
-                        <li className="c-media" id={'mobile-menu__c-media'}>
+                        <li className="c-media mobile-menu__c-media">
                             <img src={Img_vk} alt={'vk'}/>
                         </li>
-                        <li className="c-media" id={'mobile-menu__c-media'}>
+                        <li className="c-media mobile-menu__c-media">
                             <img src={Img_in} alt={'in'}/>
                         </li>
-                        <li className="c-media" id={'mobile-menu__c-media'}>
+                        <li className="c-media mobile-menu__c-media">
                             <img src={Img_twitter} alt={'twitter'}/>
                         </li>
-                        <li className="c-media" id={'mobile-menu__c-media'}>
+                        <li className="c-media mobile-menu__c-media">
                             <img src={Img_instagram} alt={'instagram'}/>
                         </li>
-                        <li className="c-media" id={'mobile-menu__c-media'}>
+                        <li className="c-media mobile-menu__c-media">
                             <img src={Img_pinterest} alt={'pinterest'}/>
                         </li>
                     </ul>

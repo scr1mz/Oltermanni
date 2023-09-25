@@ -74,30 +74,30 @@ footer {
 
 .join-us {
   margin-top: 1em;
+}
 
-  .join-us__c-media-container {
-    display: flex;
-    list-style: none;
-    padding-inline-start: 0;
+.join-us__c-media-container {
+  display: flex;
+  list-style: none;
+  padding-inline-start: 0;
+}
 
-    .c-media {
-      width: 8px;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $back-color1;
-      padding: 7px 10px;
-      border-radius: 4px;
+.c-media {
+  width: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $back-color1;
+  padding: 7px 10px;
+  border-radius: 4px;
 
-      img{
-        pointer-events: none;
-      }
+  img{
+    pointer-events: none;
+  }
 
-      &:not(&:last-child) {
-        margin-right: 7px;
-      }
-    }
+  &:not(&:last-child) {
+    margin-right: 7px;
   }
 }
 

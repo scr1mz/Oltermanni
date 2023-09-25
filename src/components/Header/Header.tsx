@@ -22,9 +22,6 @@ export const Header: React.FC = () => {
   const closeModal = (): void => {
     setIsModalOpen(false)
   }
-  /* <button className="mobile-menu-button" onClick={toggleMenu}>
-        {isOpen ? <FaTimes className={'burger-open'}/> : <FaBars className={'burger-close'}/>}
-    </button> */
 
   return (
         <header className={'is-fixed'}>
