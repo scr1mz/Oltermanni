@@ -10,21 +10,27 @@ import { MobileMenu } from './components/MobileMenu/MobileMenu'
 import { Element } from 'react-scroll'
 
 function App (): JSX.Element {
-  const { isOpen, toggleMenu, updateBurgerIcon } = useMobileMenu()
+  const {
+    isOpen,
+    toggleMenu,
+    updateBurgerIcon
+  } = useMobileMenu()
   const appRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
     if (!isOpen) {
       return
     }
-    window.addEventListener('scroll', toggleMenu)
-    window.addEventListener('scroll', updateBurgerIcon)
+    if (appRef.current != null) {
+      window.addEventListener('scroll', toggleMenu)
+      window.addEventListener('scroll', updateBurgerIcon)
 
-    return () => {
-      window.removeEventListener('scroll', toggleMenu)
-      window.removeEventListener('scroll', updateBurgerIcon)
+      return () => {
+        window.removeEventListener('scroll', toggleMenu)
+        window.removeEventListener('scroll', updateBurgerIcon)
+      }
     }
-  }, [isOpen, toggleMenu, updateBurgerIcon])
+  })
 
   return (
         <div className="App" ref={appRef}>
